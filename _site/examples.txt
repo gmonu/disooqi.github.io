@@ -1,0 +1,7 @@
+http://jmcglone.com/guides/github-pages/
+http://hankquinlan.github.io/
+http://alopez.github.io/
+https://medium.com/@kswanie21/how-to-set-up-godaddy-domain-with-github-pages-a9300366c7b
+https://help.github.com/articles/using-a-custom-domain-with-github-pages/
+http://blackrockdigital.io/
+https://blackrockdigital.github.io/startbootstrap-creative/

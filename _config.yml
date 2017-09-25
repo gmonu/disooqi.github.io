@@ -1,0 +1,119 @@
+exclude: ['README.md']
+timezone: US/Eastern
+talks:
+  -
+    title: Compact adaptable translation models on GPUs
+    detail: Talk at Google, 2013.
+    url: "http://www.cs.jhu.edu/~alopez/talks/gpus-oct2013-google.pdf"
+    img: "google-talk.jpg"
+  -
+    title: Learning to translate with products of novices
+    detail: Talk at Information Science Institute, 2013.
+    url: "http://www.cs.jhu.edu/~alopez/talks/mt-class-isi.pdf"
+    img: "isi-talk.jpg"
+    video: http://webcasterms1.isi.edu/mediasite/SilverlightPlayer/Default.aspx?peid=ea55185170054e13972a0ea5b932eb6c1d
+  -
+    title: Integrated parsing and tagging
+    detail: Talk at IBM Research, 2012.
+    url: http://www.cs.jhu.edu/~alopez/talks/integrated-parsing-and-tagging_lopez.pdf
+    img: "ibm-talk.jpg"
+  -
+    title: Semiring parsing without parsing
+    detail: Talk at Oxford, Cambridge, and Johns Hopkins, 2010.
+    url: http://www.cs.jhu.edu/~alopez/talks/oxford.pdf
+    img: "oxford-talk.jpg"
+  -
+    title: Translation model search spaces
+    detail: Talk at Dublin City University and Saarland University, 2009.
+    url: http://www.cs.jhu.edu/~alopez/talks/saarland.pdf
+    img: "saarland-talk.jpg"
+papers:
+  - layout: paper
+    selected: yes
+    year: 2017
+    paper-type: inproceedings
+    img: conll2017
+    title: "ClassStrength: A Multilingual Tool for Tweets Classification"
+    authors: Walid Magdy, <span class="text-primary">Mohamed Eldesouky</span>
+    booktitle: Advances in social networks analysis and mining (ASONAM)
+    booktitle-url: http://asonamdata.com/ASONAM2017_Proceedings/
+    doc-url: http://asonamdata.com/ASONAM2017_Proceedings/papers/097_0593_136.pdf
+    venue: Conference
+  - layout: paper
+    selected: yes
+    year: 2017
+    paper-type: inproceedings
+    img: conll2017
+    title: "Learning from Relatives: Unified Dialectal Arabic Segmentation"
+    authors: Younes Samih, <span class="text-primary">Mohamed Eldesouki</span>, Mohammed Attia, Kareem Darwish, Ahmed Abdelali, Hamdy Mubarak, Laura Kallmeyer
+    booktitle: "Proceedings of the 21st Conference on Computational Natural Language Learning (CoNLL 2017)"
+    booktitle-url: http://www.conll.org/accepted-2017
+    doc-url: http://www.aclweb.org/anthology/K17-1043
+    venue: workshop
+    code: https://github.com/qcri/dialectal_arabic_tools
+    abstract: >
+      Arabic  dialects  do  not  just  share  a  common  koińe,
+      but  there  are  shared  pan-
+      dialectal linguistic phenomena that allow
+      computational models for dialects to learn
+      from  each  other.   In  this  paper  we  build
+      a  unified  segmentation  model  where  the
+      training   data   for   different   dialects   are
+      combined  and  a  single  model  is  trained.
+      The  model  yields  higher  accuracies  than
+      dialect-specific  models,   eliminating  the
+      need for dialect identification before seg-
+      mentation.   We  also  measure  the  degree
+      of  relatedness  between  four  major  Ara-
+      bic  dialects  by  testing  how  a  segmenta-
+      tion model trained on one dialect performs
+      on the other dialects.   We found that lin-
+      guistic relatedness is contingent with ge-
+      ographical proximity.  In our experiments
+      we use SVM-based ranking and bi-LSTM-
+      CRF sequence labeling.
+  - layout: paper
+    selected: yes
+    paper-type: article 
+    year: 2017
+    img: hiero-gpu
+    title: Language processing and learning models for community question answering in Arabic
+    doc-url: http://www.sciencedirect.com/science/article/pii/S0306457316306720
+    authors: Salvatore Romeo, Giovanni Da San Martino, Yonatan Belinkov, Alberto Barrón-Cedeño, <span class="text-primary">Mohamed Eldesouki</span>, Kareem Darwish, Hamdy Mubarak, James Glass, Alessandro Moschitti
+    journal: Information Processing & Management
+    journal-url: https://www.journals.elsevier.com/information-processing-and-management/
+    volume: 3
+    venue: journal
+    abstract: >
+      In this paper we focus on the problem of question ranking in community question
+      answering (cQA) forums in Arabic. We address the task with machine learning
+      algorithms using advanced Arabic text representations. The latter are obtained
+      by applying tree kernels to constituency parse trees combined with textual
+      similarities, including word embeddings. Our two main contributions are: (i) an
+      Arabic language processing pipeline based on UIMA—from segmentation to
+      constituency parsing—built on top of Farasa, a state-of-the-art Arabic language
+      processing toolkit; and (ii) the application of long short-term memory neural
+      networks to identify the best text fragments in questions to be used in our
+      tree-kernel-based ranker. Our thorough experimentation on a recently released
+      cQA dataset shows that the Arabic linguistic processing provided by Farasa
+      produces strong results and that neural networks combined with tree kernels
+      further boost the performance in terms of both efficiency and accuracy. Our
+      approach also enables an implicit comparison between different processing
+      pipelines as our tests on Farasa and Stanford parsers demonstrate.
+  -
+    layout: paper
+#    selected: yes
+    paper-type: dissertation 
+    year: 2012
+    title: An Intelligent Agent for Arabic Web Information Retrieval
+    institution: Cairo University
+    doc-url: papers/adam.lopez.dissertation.pdf
+    img: diss2008
+    slides: http://www.cs.jhu.edu/~alopez/talks/dissertation_defense.pdf
+    latex: https://github.com/alopez/dissertation
+    abstract: >
+      <p>The best systems for machine translation of natural language are based on statistical models learned from data.  Conventional representation of a statistical translation model requires substantial offline computation and representation in main memory.  Therefore, the principal bottlenecks to the amount of data we can exploit and the complexity of models we can use are available memory and CPU time, and current state of the art already pushes these limits.  With data size and model complexity continually increasing, a scalable solution to this problem is central to future improvement.</p>
+      
+      <p>Callison-Burch et al. (2005) and Zhang and Vogel (2005) proposed a solution that we call "translation by pattern matching", which we bring to fruition in this dissertation.  The training data itself serves as a proxy to the model; rules and parameters are computed on demand.  It achieves our desiderata of minimal offline computation and compact representation, but is dependent on fast pattern matching algorithms on text.  They demonstrated its application to a common model based on the translation of contiguous substrings, but leave some open problems.  Among these is a question: can this approach match the performance of conventional methods despite unavoidable differences that it induces in the model?  We show how to answer this question affirmatively.</p>
+      
+      <p>The main open problem we address is much harder.  Many translation models are based on the translation of discontiguous substrings.  The best pattern matching algorithm for these models is much too slow, taking several minutes per sentence.  We develop new algorithms that reduce empirical computation time by two orders of magnitude for these models, making translation by pattern matching widely applicable.  We use these algorithms to build a model that is two orders of magnitude larger than the current state of the art and substantially outperforms a strong competitor in Chinese-English translation.  We show that a conventional representation of this model would be impractical.  Our experiments shed light on some interesting properties of the underlying model.  The dissertation also includes the most comprehensive contemporary survey of statistical machine translation.</p>
