@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog | Create your Python Virtual Environment in Super Ultra Fast Steps</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mohamed Eldesouki's Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Blog
+                    </a>
+                </li>
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Services</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Contact</a>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+            <!-- Title -->
+            <h1 class="mt-4">Create your Python Virtual Environment in Super Ultra Fast Steps</h1>
+
+            <!-- Author -->
+            <p class="lead">
+                by
+                <a href="#">Mohamed Eldesouki</a>
+            </p>
+
+            <hr>
+
+            <!-- Date/Time -->
+            <p>Posted on Sept. 27, 2017</p>
+
+            <hr>
+
+            <!-- Preview Image -->
+            <img class="img-fluid card-img-top rounded" src="img/750x300/venv.png" alt="">
+
+            <hr>
+
+            <!-- Post Content -->
+            <p class="lead"></p>
+            <p>
+                The post shows two ways to create a virtual environment in Python; using the virtualenv package and
+                using conda package.
+            </p>
+            <h4>create your virtual environment via <code>virtualenv</code></h4>
+            <p>Install the virtualenv package using the following;</p>
+            <pre class="alert alert-info"><code>pip install virtualenv</code></pre>
+            <p>to create an environment run the following command:</p>
+            <pre class="alert alert-info"><code>virtualenv &lt;env_name&gt;</code></pre>
+            <p>to activate the environment just run</p>
+            <pre class="alert alert-info"><code>source &lt;env_name&gt;/bin/activate</code></pre>
+
+            <p>If you want to install a special version of Python for the environment run the following instead:</p>
+
+            <pre class="alert alert-info"><code>virtualenv --python=&lt;path_of_python_2_or_3&gt; &lt;env_name&gt;</code></pre>
+
+            <p>Use <code>which python</code> To know the path to your version</p>
+            <p>To close your environment type:</p>
+            <pre class="alert alert-info"><code>deactivate</code></pre>
+
+            <h4><code>Conda</code> virtual environment</h4>
+            <p>You need to have Anaconda installed to use Conda to create an environment.
+                <a href="https://www.anaconda.com/download/"> Download and install Anaconda from here</a>. After
+                Installing Anaconda
+                use the following to create the environment:</p>
+            <pre class="alert alert-info"><code>conda create --name &lt;env_name&gt; python=3.6</code></pre>
+            <p>to activate the environment just run</p>
+            <pre class="alert alert-info"><code>source activate &lt;env_name&gt;</code></pre>
+            <p>To close your environment type:</p>
+            <pre class="alert alert-info"><code>source deactivate</code></pre>
+            <p>To delete your environment type:</p>
+            <pre class="alert alert-info"><code>conda remove --name &lt;env_name&gt; --all</code></pre>
+
+
+            <hr>
+
+            <!-- Comments Form -->
+            <div class="card my-4">
+                <h5 class="card-header">Leave a Comment:</h5>
+                <div class="card-body">
+                    <div id="disqus_thread"></div>
+                    <script>
+
+                        /**
+                         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                        var disqus_config = function () {
+                            this.page.url = 'https://disooqi.github.io/blog/py-virtual-environment.html';  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = '1'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://disooqi-github-io.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered by Disqus.</a></noscript>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Search</h5>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Widget -->
+            <div class="card my-4">
+                <h5 class="card-header">Categories</h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">Python</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tensorflow</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deep Learning</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">NLP</a>
+                                </li>
+                                <li>
+                                    <a href="#">Neural Network</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tutorials</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Side Widget-->
+            <div class="card my-4">
+                <h5 class="card-header">Statistics</h5>
+                <div class="card-body">
+                    <!-- BEGIN: Powered by Supercounters.com -->
+                    <center>
+                        <script type="text/javascript" src="//widget.supercounters.com/ssl/flag.js"></script>
+                        <script type="text/javascript">sc_flag(1444140, "FFFFFF", "888888", "FFFFFF", 2, 40, 0, 0)</script>
+                        <br>
+                        <noscript><a href="http://www.supercounters.com/">Flag Counter</a></noscript>
+                    </center>
+                    <!-- END: Powered by Supercounters.com -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; disooqi.github.io 2017</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
