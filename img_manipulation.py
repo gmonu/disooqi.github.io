@@ -3,7 +3,7 @@
 from PIL import Image
 
 
-size_750x300 = (750, 300)
+size_750x300 = (750, 200)
 #
 img = Image.open('blog/img/maxresdefault.jpg')
 img.thumbnail(size_750x300)
