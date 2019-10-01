@@ -5,11 +5,11 @@
  */
 
 body {
-    padding-top: 54px;
+    padding-top: 64px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 998px) {
     body {
-        padding-top: 56px;
+        padding-top: 66px;
     }
 }
